@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layoutDeleteNote_Container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="10dp"
+    android:background="@drawable/bg_dialog">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/imgDeleteNote"
+        android:layout_width="50dp"
+        android:layout_height="150dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginRight="8dp"
+        android:layout_toRightOf="@id/imgDeleteNote"
+        android:text="Delete Note"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textDeleteNoteMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgDeleteNote"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="7dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="7dp"
+        android:includeFontPadding="false"
+        android:paddingRight="8dp"
+        android:text="Copy codni tanlang"
+        android:textColor="@color/white"
+        android:textSize="13dp" />
+
+    <TextView
+        android:id="@+id/textDeleteNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textDeleteNoteMessage"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="7dp"
+        android:includeFontPadding="false"
+        android:padding="6dp"
+        android:text="Dex code"
+        android:textAllCaps="true"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textCancelNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textDeleteNoteMessage"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="7dp"
+        android:layout_alignParentEnd="false"
+        android:layout_marginBottom="7dp"
+        android:layout_marginLeft="202dp"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@id/textDeleteNote"
+        android:fontFamily="@font/averia_gruesa_libre"
+        android:includeFontPadding="false"
+        android:padding="6dp"
+        android:text="cancel"
+        android:textAllCaps="true"
+        android:textColor="@color/color_dark3"
+        android:textSize="20sp" />
+
+</RelativeLayout>
